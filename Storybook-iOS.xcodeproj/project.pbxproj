@@ -15,6 +15,7 @@
 		630D2A5F20337112009BF841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630D2A5D20337112009BF841 /* LaunchScreen.storyboard */; };
 		630D2A6A20337112009BF841 /* Storybook_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D2A6920337112009BF841 /* Storybook_iOSTests.swift */; };
 		630D2A7520337112009BF841 /* Storybook_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D2A7420337112009BF841 /* Storybook_iOSUITests.swift */; };
+		63199F23204F24C5006A1891 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63199F22204F24C5006A1891 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		630D2A7020337112009BF841 /* Storybook-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Storybook-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		630D2A7420337112009BF841 /* Storybook_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storybook_iOSUITests.swift; sourceTree = "<group>"; };
 		630D2A7620337112009BF841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63199F22204F24C5006A1891 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				630D2A5D20337112009BF841 /* LaunchScreen.storyboard */,
 				630D2A6020337112009BF841 /* Info.plist */,
 				630D2A5820337112009BF841 /* Storybook_iOS.xcdatamodeld */,
+				63199F22204F24C5006A1891 /* SettingsViewController.swift */,
 			);
 			path = "Storybook-iOS";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				630D2A5A20337112009BF841 /* Storybook_iOS.xcdatamodeld in Sources */,
 				630D2A5420337112009BF841 /* ViewController.swift in Sources */,
 				630D2A5220337112009BF841 /* AppDelegate.swift in Sources */,
+				63199F23204F24C5006A1891 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

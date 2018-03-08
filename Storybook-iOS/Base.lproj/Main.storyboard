@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Storybook_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGr-PS-62T">
+                                <rect key="frame" x="132" y="306" width="110" height="55"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="43"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQy-it-67X">
+                                <rect key="frame" x="308" y="630" width="64" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="t2m-cs-uwE" kind="show" id="hpB-Wk-qtq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VQy-it-67X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="308" id="6DF-nd-QAt"/>
+                            <constraint firstItem="VQy-it-67X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6ii-iI-WGe"/>
+                            <constraint firstItem="kGr-PS-62T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="286" id="L0N-IS-OVD"/>
+                            <constraint firstItem="kGr-PS-62T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="MFK-au-XkR"/>
+                            <constraint firstItem="kGr-PS-62T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sxj-UF-P4V"/>
+                            <constraint firstItem="kGr-PS-62T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZqZ-93-dKa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2i9-1p-T2R">
+            <objects>
+                <viewController id="t2m-cs-uwE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QgS-j7-NvI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng5-Ml-GAh">
+                                <rect key="frame" x="64" y="134" width="246" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="rrX-b8-O0n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <state key="normal" title="Record Voice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMa-z0-LGD">
+                                <rect key="frame" x="14" y="297" width="347" height="73"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
+                                <state key="normal" title="Reading Statistics"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-G5-ErC">
+                                <rect key="frame" x="14" y="432" width="347" height="73"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
+                                <state key="normal" title="About"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Loo-G5-ErC" firstAttribute="top" secondItem="ZMa-z0-LGD" secondAttribute="bottom" constant="62" id="52f-vg-szz"/>
+                            <constraint firstItem="ZMa-z0-LGD" firstAttribute="leading" secondItem="C8W-oc-bv7" secondAttribute="leading" constant="14" id="DLc-Gq-oFJ"/>
+                            <constraint firstItem="ZMa-z0-LGD" firstAttribute="leading" secondItem="Loo-G5-ErC" secondAttribute="leading" id="F3r-hx-TWW"/>
+                            <constraint firstItem="ZMa-z0-LGD" firstAttribute="top" secondItem="Ng5-Ml-GAh" secondAttribute="bottom" constant="90" id="Fv7-Eb-6fO"/>
+                            <constraint firstItem="Ng5-Ml-GAh" firstAttribute="centerX" secondItem="ZMa-z0-LGD" secondAttribute="centerX" id="Gvn-EJ-Gzb"/>
+                            <constraint firstItem="Ng5-Ml-GAh" firstAttribute="leading" secondItem="C8W-oc-bv7" secondAttribute="leading" constant="64" id="Txk-YD-WpG"/>
+                            <constraint firstItem="ZMa-z0-LGD" firstAttribute="centerY" secondItem="QgS-j7-NvI" secondAttribute="centerY" id="fsO-Vg-NmM"/>
+                            <constraint firstItem="C8W-oc-bv7" firstAttribute="bottom" secondItem="Loo-G5-ErC" secondAttribute="bottom" constant="162" id="nFz-kU-P0B"/>
+                            <constraint firstItem="Ng5-Ml-GAh" firstAttribute="centerX" secondItem="QgS-j7-NvI" secondAttribute="centerX" id="pd5-2M-bqo"/>
+                            <constraint firstItem="ZMa-z0-LGD" firstAttribute="trailing" secondItem="Loo-G5-ErC" secondAttribute="trailing" id="sxZ-Xj-FEM"/>
+                            <constraint firstItem="Ng5-Ml-GAh" firstAttribute="top" secondItem="C8W-oc-bv7" secondAttribute="top" constant="114" id="yaV-NS-R7k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C8W-oc-bv7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uor-Rc-n8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="118"/>
         </scene>
     </scenes>
 </document>
